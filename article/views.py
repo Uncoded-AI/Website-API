@@ -8,6 +8,7 @@ from article.forms import docTypeForm
 import re
 from bs4 import BeautifulSoup
 import string
+from django.http import JsonResponse
 
 class Article(APIView):
     renderer_classes = [TemplateHTMLRenderer]
@@ -43,5 +44,7 @@ class Article(APIView):
 
     def post(self, request):
         text = self.clean_text(request.data["text"])
-
-        return Response({'class':detect_class(text)})
+        
+        if 'api' in request.data:
+            return Response({'class':detect_class(text)})
+        return JsonResponse({'class':detect_class(text)})

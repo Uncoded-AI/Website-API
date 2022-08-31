@@ -32,7 +32,7 @@
             {% csrf_token %}
             {{ form.as_p }}
             {% if button == 'true' %}
-                <input style="background-color: rgb(9, 170, 9); margin: 20px; padding: 10px; font-size: medium; color: azure; cursor: pointer;" type="submit" value="Detect Class">
+                <input name="api" style="background-color: rgb(9, 170, 9); margin: 20px; padding: 10px; font-size: medium; color: azure; cursor: pointer;" type="submit" value="Detect Class">
             {% else %}
                 <H1> Your article is : {{ class }} class </H1>
             {% endif %}
