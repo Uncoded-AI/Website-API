@@ -34,6 +34,8 @@ After Submit...
 
 <div align="center">
 
-![image](https://user-images.githubusercontent.com/55041104/188284927-bfb79e14-fadc-45fb-a3b2-6fa31a9bb0a3.png)
+![image](https://user-images.githubusercontent.com/55041104/188285158-700e8b0a-3390-4853-affd-0c4786c1ef6b.png)
 
 </div>
+
+Red Section is Done by [docType](https://github.com/Uncoded-AI/docType) module
