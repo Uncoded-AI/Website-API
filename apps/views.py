@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 import string
 from django.http import JsonResponse
 
-class Article(APIView):
+class docTypeView(APIView):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'doctype.html'
 
