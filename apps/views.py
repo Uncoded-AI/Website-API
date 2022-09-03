@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from docType.docType import detect_class
 from rest_framework.renderers import TemplateHTMLRenderer
 from django.shortcuts import get_object_or_404
-from article.forms import docTypeForm
+from apps.forms import docTypeForm
 import re
 from bs4 import BeautifulSoup
 import string
